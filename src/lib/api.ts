@@ -16,7 +16,7 @@ export const api = async <T>(
   });
 
   const url = `${config.urls.baseUrl}?__call=${path}&${params}`;
-  const langs = params.get("language") || "hindi,english";
+  const langs = params.get("language") || "english";
 
   const response = await fetch(url, {
     headers: {
